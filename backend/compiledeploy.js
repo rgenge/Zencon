@@ -1,14 +1,15 @@
 const Web3 = require("web3");
 
 async function main() {
-  // Configuring compilation configuration and compiling contract
+  // Configuring the connection to an Ethereum node
   const fs = require("fs");
+  //const { abi, bytecode } = fs.readFileSync('Storage.json');
   const solc = require('solc');
-  const input = fs.readFileSync('Storage.sol');
+  const input = fs.readFileSync('./contracts/Record.sol');
   const output = solc.compile(input.toString(), 1);
-  const bytecode = output.contracts[':Storage'].bytecode;
-  const abi = JSON.parse(output.contracts[':Storage'].interface);
-  // Configuring the connection to an Ethereum node and 
+  const bytecode = output.contracts[':Record4'].bytecode;
+  const abi = JSON.parse(output.contracts[':Record4'].interface);
+
   const network = process.env.ETHEREUM_NETWORK || "localhost";
   const web3 = new Web3(
     new Web3.providers.HttpProvider(
@@ -33,9 +34,10 @@ async function main() {
     .once("transactionHash", (txhash) => {
       console.log(`Mining deployment transaction ...`);
     });
+  // The contract is now deployed on chain!
   console.log(`Contract deployed at ${deployedContract.options.address}`);
   console.log(
-    `Contract address: ${deployedContract.options.address}`,
+    `Add DEMO_CONTRACT to the.env file to store the contract address: ${deployedContract.options.address}`,
   );
 }
 
