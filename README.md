@@ -1,4 +1,4 @@
-## Setup -PROJECT IS IN PROGRESS (DASHBOARD, VIEW PROFILE NEEDS TO BE FINISHED)
+## Setup -PROJECT IS IN PROGRESS (DASHBOARD, ABOUT US AND  VIEW PROFILE NEEDS TO BE FINISHED)
 1. Download Metamask Extension from chrome
 2. Set up your wallet using ganache
 3. Access your local account using ganache and test run the program
