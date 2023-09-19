@@ -2,7 +2,6 @@
 1. Download Metamask Extension from chrome
 2. Set up your wallet using ganache
 3. Access your local account using ganache and test run the program
-4. Don't forget to connect your wallet to the localhost address
 
 
 ## How to Install System
@@ -20,5 +19,6 @@ node deploy.js
 ```
 ```
 truffle init
+truffle compile
 truffle migrate
 ```

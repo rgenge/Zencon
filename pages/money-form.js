@@ -8,6 +8,7 @@ const planOptions = [
     { key: 'plan1', text: '24 x 0.1ETH', value: 'plan1' },
     { key: 'plan2', text: '24 x 0.2ETH', value: 'plan2' },
     { key: 'plan3', text: '24 x 0.4ETH', value: 'plan3' },
+    { key: 'plan4', text: '100 ETH', value: 'plan4' },
 ]
 const DueDayOptions = [
     { key: '5', text: '5', value: '5' },
@@ -17,7 +18,7 @@ const DueDayOptions = [
 const whyOptions = [
     { key: 'Save', text: 'Save Money', value: 'Save' },
     { key: 'Buy', text: 'Buy something', value: 'Buy' },
-    { key: 'Invest', text: 'Invest in digital coin', value: 'Invest' },
+    { key: 'Invest', text: 'Invest in assets', value: 'Invest' },
 ]
 
 class MoneyForm extends Component {

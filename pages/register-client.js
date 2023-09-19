@@ -19,8 +19,11 @@ class RegisterClient extends Component {
         event.preventDefault();
         const {name, phone, gender, location ,taxnumber} = this.state;
         this.setState({loading :true, errorMessage: ''});
+        console.log("accounts:,,,");
         try {
+            console.log("accounts:,,,");
             const accounts = await web3.eth.getAccounts();
+            console.log("accounts:", accounts);
             await record.methods.setClient(
             name,phone,gender, location , taxnumber).send({from:accounts[0]});
             alert("Client account created");
