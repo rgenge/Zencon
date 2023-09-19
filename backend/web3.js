@@ -8,7 +8,7 @@ if(typeof window !== 'undefined' && window.web3 !== 'undefined') {
 } else {
     //We are on the server OR the user is not running metamask
     const provider = new Web3.providers.HttpProvider(
-        'HTTP://localhost:7545'
+        'https://smart1.zeniq.network:9545'
     );
     web3 = new Web3(provider);
 }

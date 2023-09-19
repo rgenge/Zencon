@@ -20,7 +20,7 @@ export default props => {
             <MenuBar/>
                 <div style={{marginLeft:'850px'}}><Image src="https://clipart-library.com/images_k/raining-money-gif-transparent/raining-money-gif-transparent-15.png"
                alt="Money" width="150px" aspect-ratio='auto'/></div>
-                <Header as='h2' color='yellow' style={{ fontSize:'5em', fontWeight:'normal'}} content='Zencon Financing Pool'/>
+                <Header as='h2' color='yellow' style={{ fontSize:'5em', fontWeight:'normal'}} content='LinkUp Chain'/>
                 <Header as='h3' style={{ fontSize:'1.5em', fontWeight:'normal'}} content='Platform where you pay monthly fee and can be selected to receive the total amount anytime during the payments'/>
 
             </Segment>
