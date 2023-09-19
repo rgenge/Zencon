@@ -12,10 +12,9 @@ npm i
 ```
 npm run start
 ```
-## When you change the contract file you have to use truffle to deploy it again or try the js files, they doesnt work in every machine
+## For Backend: When you change the contract file you have to use deploy.js if you change the contract, them migrate it using truffle.
 ```
 node compile.js
-node deploy.js
 ```
 ```
 truffle init
