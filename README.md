@@ -19,6 +19,5 @@ node deploy.js
 ```
 ```
 truffle init
-truffle compile
 truffle migrate
 ```
