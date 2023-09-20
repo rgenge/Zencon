@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import web3 from '../backend/web3';
-import Layout from '../components/Layout'
+import Layout from '../components/Layout';
 import record from '../backend/record';
 import {Form, Input, Button, Segment,Message} from 'semantic-ui-react';
 class RegisterClient extends Component {

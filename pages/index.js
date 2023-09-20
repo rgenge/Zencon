@@ -26,36 +26,6 @@ const { MediaContextProvider, Media } = createMedia({
   },
 })
 
-const HomepageHeading = ({ mobile }) => (
-  <Container text>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"></link>
-    <Header
-      as='h1'
-      content='Is it hard for you to save money? Invest monthly with us and get save money with us and you may even get your money back
-      before paying all your installments!'
-      inverted
-      style={{
-        fontSize: mobile ? '1em' : '2em',
-        fontWeight: 'normal',
-        marginBottom: 0,
-        marginTop: mobile ? '1.5em' : '3em',
-        fontFamily:'Georgia',
-      }}
-    />
-
-    <Button primary size='huge' inverted>
-      <Link route='register-client'>
-        <a className='item'>Get Started</a>
-      </Link>
-      <Icon name='right arrow' />
-    </Button>
-  </Container>
-)
-
-HomepageHeading.propTypes = {
-  mobile: PropTypes.bool,
-}
-
 class DesktopContainer extends Component {
   state = {}
 
@@ -80,8 +50,7 @@ class DesktopContainer extends Component {
             textAlign='center'
             style={{ minHeight: 700, padding: '1em 0em' }}
             vertical
-          >   
-            <HomepageHeading />
+          >
           </Segment>
         {children}
        </Media>
@@ -129,7 +98,6 @@ class MobileContainer extends Component {
               style={{ minHeight: 350, padding: '1em 0em' }}
               vertical
             >
-              <HomepageHeading mobile />
             </Segment>
             {children}
       </Media>
@@ -159,12 +127,10 @@ const HomepageLayout = () => (
         <Grid.Row>
           <Grid.Column width={8}>
             <Header as='h3' style={{ fontSize: '2em' }}>
-              We Help people that have trouble saving money to save money! But how ? 
+              LinkUp Chain is a way to turn your dreams into reality.
             </Header>
             <p style={{ fontSize: '1.33em' }}>
-              You will select between our plans , where you will pay a fee monthly between 24 and 48 months, and after that time ends you 
-              will get your money back, but the best part is that you may be able to draw your money before the 48 months, every month a number 
-              of users will be selected using an AI system and get your money. 
+              By investing a small amount each month, you can change your life and achieve the gift you've always wanted.
             </p>
           </Grid.Column>
           <Grid.Column floated='right' width={6}>

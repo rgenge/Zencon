@@ -1,9 +1,7 @@
 import React from 'react';
 import { Image, Container, Header, Icon, Segment } from 'semantic-ui-react';
 import Head from 'next/head';
-import MenuBar from './MenuBar';
-
-//Layout properly the Header at the top of every page and then the content come afterwards
+import MenuHamburguer from './MenuHamburguer'; // Importando o componente MenuHamburguer
 
 export default props => {
     return (
