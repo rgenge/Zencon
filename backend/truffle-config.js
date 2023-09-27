@@ -45,7 +45,7 @@
 // const { MNEMONIC, PROJECT_ID } = process.env;
 
  const HDWalletProvider = require('@truffle/hdwallet-provider');
- const MNEMONIC = "borrow strike shine average grunt because fetch ahead pilot empty traffic shoulder";
+ const MNEMONIC = "12 words mnenomic phrase";
 
 module.exports = {
   /**
