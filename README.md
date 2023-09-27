@@ -4,6 +4,10 @@
 3. Access your local account using ganache and test run the program
 
 
+https://github.com/rgenge/Zencon/assets/82456124/8597774a-f1b9-4d79-a097-79c124d55f87
+
+
+
 ## How to Install System
 ```
 npm i
